@@ -1,0 +1,20 @@
+package Selenium.webdriver.basictest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Firsttest {
+
+	public static void main(String[] args) 
+	{
+		System.setProperty("webdriver.firefox.marionette", "E://Users//Administrator//eclipse//geckodriver-v0.30.0-win64//geckodriver");
+
+		//FirefoxDriver driver=new FirefoxDriver(); // Invoke web browser
+		
+		WebDriver driver=new FirefoxDriver(); // Invoked any Web browser
+		
+		driver.get("https://www.facebook.com/");
+	}
+
+}
+	

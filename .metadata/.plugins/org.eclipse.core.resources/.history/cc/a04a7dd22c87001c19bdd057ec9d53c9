@@ -1,0 +1,48 @@
+package TestNGDemo;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestNGDemo2
+{
+	
+	@Test
+	public void secondClass()
+	{
+		System.out.println("How r u");
+	}
+	
+	@BeforeMethod // This will execute only in a particular class in which it is mentioned
+	public void beforeevery() // this will execute after every single testcase
+	{ 
+		System.out.println("this will execute before in every test method in this TestNG class only ");
+		
+	}
+	
+	
+	@AfterMethod // This will execute only in a particular class in which it is mentioned
+	public void afterevery() // this will execute after every single testcase
+	{ 
+		System.out.println("this will execute after in every test method in this TestNG class only ");
+		
+	}
+	@Test
+	public void check()
+	{
+		System.out.println("Hieee");
+	}
+	
+	@Test
+	public void test()
+	{
+		System.out.println("real");
+	}
+	@AfterSuite
+	public void after()
+	{
+		System.out.println("I am last");
+	}
+
+}
